@@ -3,85 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto de Apliaciones Web Interactivas</title>
+    <title>Mi Proyecto de Aplicaciones Web Interactivas</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <style>
-        body{
+        body {
             background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
             min-height: 100vh;
-            font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        .container {
+        .glass-container {
             background-color: rgba(255, 255, 255, 0.7);
             border-radius: 15px;
             padding: 30px;
-            margin-top:30px;
+            margin-top: 30px;
             backdrop-filter: blur(5px);
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        }
+        
+        /* Ajuste para que las imágenes de las tarjetas se vean uniformes */
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">Web Interactiva</a>
+            <a class="navbar-brand fw-bold" href="#">Web Interactiva 🚀</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Música</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Proyectos</a>
-                </li>
-            </ul>
-        </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Música</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Proyectos</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="container text-center mt-5 p-2">
-        <h1>Primer proyecto con bootstrap</h1>
-        <p>Este es el incio de mi aplicacion interactiva</p>
-        <button class="btn btn-primary">Botón de Prueba</button>
 
-    </div>
-    <div class="container">
-        <div class="row">
-    <div class="col-md-8 bg-light border p-4">
-        <h3>Columna Principal</h3>
-        <div class="row">
-            <div class="col-sm-6 mb-3">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary">Trance Mix</h5>
-                        <p class="card-text">Explorando nuevos bets para estudiar.</p>
-                        <a href="https://www.youtube.com/watch?v=THeyGK_9vNM" class="btn btn-sm btn-outline-primary">Escuchar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 mb-3 ">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title text-danger">Trap & Urbano</h5>
-                        <p class="card-text">Lo que mas me gusta del genero urbano</p>
-                        <a href="https://www.youtube.com/playlist?list=PLSBWvYm8t6uYPCRfKQWCeR9R4TteEQpWG" class="btn btn-sm btn-outline-primary">Escuchar</a>
-                    </div>
-                </div>
-            </div>
-    </div>
-    <div class="col-md-4 bg-secondary text-white border">
-        <h3>Barra Lateral</h3>
-        <p>Información extra o enlaces.</p>
-    </div>
-</div>
+    <div class="container glass-container text-center mt-5">
+        <h1 class="fw-bold">Primer proyecto con Bootstrap</h1>
+        <p class="lead">Explorando la interactividad y el diseño responsivo.</p>
+        <button class="btn btn-primary shadow-sm">Botón de Prueba</button>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container glass-container mb-5">
+        <div class="row">
+            
+            <div class="col-md-8 p-4">
+                <h3 class="mb-4">Contenido Destacado</h3>
+                <div class="row">
+                    <div class="col-sm-6 mb-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Trance Music">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-primary fw-bold">Trance Mix</h5>
+                                <p class="card-text text-muted">Beats envolventes para concentrarte en tus proyectos de ingeniería.</p>
+                                <a href="https://www.youtube.com/watch?v=THeyGK_9vNM" target="_blank" class="btn btn-outline-primary w-100">Escuchar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Trap & Urbano">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-danger fw-bold">Trap & Urbano</h5>
+                                <p class="card-text text-muted">Lo mejor del género urbano para motivarte durante el día.</p>
+                                <a href="https://www.youtube.com/playlist?list=PLSBWvYm8t6uYPCRfKQWCeR9R4TteEQpWG" target="_blank" class="btn btn-outline-danger w-100">Ver Playlist</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <div class="col-md-4 p-4 border-start">
+                <h4 class="mb-3">Buscador</h4>
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control" placeholder="Buscar música..." aria-label="Search">
+                    <button class="btn btn-dark" type="button">Ir</button>
+                </div>
+
+                <h4 class="mb-3">Categorías</h4>
+                <div class="list-group shadow-sm">
+                    <a href="#" class="list-group-item list-group-item-action active">Electrónica / Trance</a>
+                    <a href="#" class="list-group-item list-group-item-action">Trap & Urbano</a>
+                    <a href="#" class="list-group-item list-group-item-action">Corridos Tumbados</a>
+                    <a href="#" class="list-group-item list-group-item-action">Proyectos Escolares</a>
+                </div>
+            </div>
+
+        </div> </div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
